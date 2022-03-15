@@ -1,0 +1,23 @@
+"6351"|"6350"|"04/30/2020"|"3727.72"
+"6352"|"6353"|"04/30/2020"|"2527.62"
+"6354"|"6355"|"04/30/2020"|"3638.51"
+"6356"|"6357"|"04/30/2020"|"1842.64"
+"6358"|"6359"|"04/30/2020"|"3324.81"
+
+
+fmill header col no 40
+	line col no 23
+	docno: 0
+	date: 3
+	supplier: 5
+	refno: 7
+	remarks: 8
+	amount: 17
+	line doc no: 0
+	line item code: 2
+	line UOM: 8
+	line Unit Cost: 16
+	line qty: 3
+	line netweight: 14
+	line amount; 17
+	
