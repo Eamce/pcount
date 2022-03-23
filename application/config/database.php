@@ -1,14 +1,14 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 $active_group = 'pcount';
 $query_builder = TRUE;
 
 $db['pcount'] = array(
 	'dsn'	=> '',
-	'hostname' => '172.16.43.109',
-	'username' => 'root',
-	'password' => 'thirteen',
+	'hostname' => '172.16.161.100',
+	'username' => 'pcount',
+	'password' => 'pcount2022',
 	'database' => 'pcount',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
