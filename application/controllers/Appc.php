@@ -500,7 +500,9 @@ class Appc extends CI_Controller
 
 	public function insertNFItemList()
 	{
-		$nfitems	 =  $this->security->xss_clean($this->input->post('nfitems'));
+		$nfitems	 		=  $this->security->xss_clean($this->input->post('nfitems'));
+		$auditSignature	 	=  $this->security->xss_clean($this->input->post('audit_signature'));
+		$userSignature	 	=  $this->security->xss_clean($this->input->post('user_signature'));
 
 		$nfjson = str_replace('&quot;', '"', $nfitems);
 		$decodedNfItems = json_decode($nfjson, true);
@@ -513,11 +515,18 @@ class Appc extends CI_Controller
 				"qty" 				=> $nfress['qty'],
 				"location_id" 		=> $nfress['location'],
 				"datetime_scanned" 	=> $nfress['datetimecreated'],
+				//Added 
+				"business_unit" 	=> $nfress['business_unit'],
+				"department" 		=> $nfress['department'],
+				"section" 			=> $nfress['section'],
+				"empno" 			=> $nfress['empno'],
+				"rack_desc" 		=> $nfress['rack_desc'],
+				"audit_signature" 	=> $auditSignature,
+				"user_signature" 	=> $userSignature,
 				"datetime_exported"	=> date("Y-m-d H:i:s"),
 			);
 			$nfres = $this->db->insert('tbl_app_nfitem', $nffinal_ress);
 		endforeach;
-
 		echo json_encode($nfres);
 	}
 
