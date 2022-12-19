@@ -864,7 +864,7 @@ class Appm extends CI_Model
 	public function getItemMasterfileOffset_mod($offset)
 	{
 		// $this->db->select('item_no, barcode_no, show_item, description, variant_code, uom');
-		$this->db->select('item_code, barcode, desc, uom, vendor_name,category,group as ggroup,conversion_qty,variant_code');
+		$this->db->select('item_code, barcode, extended_desc, uom, vendor_name,category,group as ggroup,conversion_qty,variant_code');
 		$this->db->from('tbl_item_masterfile');
 		$this->db->offset($offset);
 		$this->db->limit(50000);

@@ -719,4 +719,8 @@ class Appc extends CI_Controller
 		$result = $this->Appm->getFloorPlanData();
 		echo json_encode($result);
 	}
+
+	public function getAuditTrail()
+	{
+	}
 }

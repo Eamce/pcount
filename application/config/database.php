@@ -1,15 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$active_group = 'pcount';
+$active_group = 'pcount-live';
 $query_builder = TRUE;
 
-$db['pcount'] = array(
+$db['pcount-live'] = array(
 	'dsn'	=> '',
-	'hostname' => '172.16.43.109',
-	'username' => 'root',
-	'password' => 'thirteen',
-	'database' => 'pcount',
+	'hostname' => '172.16.161.100',
+	'username' => 'pcount-live',
+	'password' => 'pcount-live2022',
+	'database' => 'pcount-live',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -62,3 +62,4 @@ $route['mapi/updateFloorPlanStatus']        = 'Appc/updateFloorPlanStatus';
 $route['mapi/insertFloorPlanData']          = 'Appc/insertFloorPlanData';
 $route['mapi/getFloorPlanData']             = 'Appc/getFloorPlanData';
 $route['mapi/getUnit']                      = 'Appc/getUnit';
+$route['mapi/getAuditTrail']                = 'Appc/getAuditTrail';
